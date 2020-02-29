@@ -1,10 +1,17 @@
+from pathlib import Path
+import sys
+
+print((Path('..') / 'lib').resolve())
+
+sys.path.append((Path('..') / 'lib').resolve())
+
 from http.server import BaseHTTPRequestHandler
 from datetime import datetime
-from dotenv import load_dotenv
 import os
-from pathlib import Path  # python3 only
-env_path = Path('..') / '.env'
-load_dotenv(dotenv_path=env_path)
+from supershop import *
+
+load_env()
+
 
 class handler(BaseHTTPRequestHandler):
 

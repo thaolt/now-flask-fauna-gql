@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "0f74dd2ba8058db33f1f7f858848cb1eb853c2e1f16067be5b1391e32a136521"
+            "sha256": "cd6d385007e7d823774b42cf5c221690b9203328c57144f556440254187e8668"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -30,6 +30,19 @@
             ],
             "version": "==3.0.4"
         },
+        "faunadb": {
+            "hashes": [
+                "sha256:ca2acb0a54d27ff2e27708d7dc1a5670bf587835e9c2779bff260a355888a390"
+            ],
+            "index": "pypi",
+            "version": "==2.11.0"
+        },
+        "future": {
+            "hashes": [
+                "sha256:b1bead90b70cf6ec3f0710ae53a525360fa360d306a86583adc6bf83a4db537d"
+            ],
+            "version": "==0.18.2"
+        },
         "gql": {
             "hashes": [
                 "sha256:42c03890f8475f46751939dedbd276b471463b5f2345c9c54b6cf84d9e58b1e8"
@@ -50,6 +63,14 @@
                 "sha256:a068a21ceac8a4d63dbfd964670474107f541babbd2250d61922f029858365fa"
             ],
             "version": "==2.9"
+        },
+        "iso8601": {
+            "hashes": [
+                "sha256:210e0134677cc0d02f6028087fee1df1e1d76d372ee1db0bf30bf66c5c1c89a3",
+                "sha256:49c4b20e1f38aa5cf109ddcd39647ac419f928512c869dc01d5c7098eddede82",
+                "sha256:bbbae5fb4a7abfe71d4688fd64bff70b91bbd74ef6a99d964bab18f7fdf286dd"
+            ],
+            "version": "==0.1.12"
         },
         "promise": {
             "hashes": [
