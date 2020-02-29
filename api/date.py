@@ -1,16 +1,10 @@
-from pathlib import Path
-import sys
-import importlib
 from http.server import BaseHTTPRequestHandler
-from datetime import datetime
-import os
+from os import getenv
 from lib.supershop import *
 
 from gql import gql, Client
 from gql.transport.requests import RequestsHTTPTransport
 import json
-
-
 
 load_env()
 
@@ -25,7 +19,7 @@ class handler(BaseHTTPRequestHandler):
     client = Client(
       transport=RequestsHTTPTransport(
         url='https://graphql.fauna.com/graphql', 
-        headers={'Authorization': 'Bearer ' + os.getenv("FAUNADB_API_KEY")},
+        headers={'Authorization': 'Bearer ' + getenv("FAUNADB_SECRET")},
         use_json=True,
       ),
       fetch_schema_from_transport=True,
