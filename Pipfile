@@ -10,6 +10,7 @@ python-dotenv = "*"
 gql = "*"
 faunadb = "*"
 auth0-python = "*"
+flask = "*"
 
 [requires]
 python_version = "3.6"

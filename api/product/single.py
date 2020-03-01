@@ -16,8 +16,25 @@ class handler(BaseHTTPRequestHandler):
     self.send_header('Content-type', 'application/json')
     self.end_headers()
 
+    client = Client(
+      transport=RequestsHTTPTransport(
+        url='https://graphql.fauna.com/graphql', 
+        headers={'Authorization': 'Bearer ' + getenv("FAUNADB_SECRET")},
+        use_json=True,
+      ),
+      fetch_schema_from_transport=True,
+    )
+
+    query = gql("""
+    {
+      findClientByID(id: "258719855966945812") {
+        email
+      }
+    }
+    """)
+
     self.wfile.write(
-      '{"aaaa":"bbb"}'.encode()
+      json.dumps(client.execute(query)).encode('utf-8')
     )
 
     return
