@@ -9,6 +9,7 @@ verify_ssl = true
 python-dotenv = "*"
 gql = "*"
 faunadb = "*"
+auth0-python = "*"
 
 [requires]
 python_version = "3.6"
