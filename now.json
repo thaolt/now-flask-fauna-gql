@@ -1,0 +1,6 @@
+{
+    "trailingSlash": false,
+    "rewrites": [
+        { "source": "/api/product/:id", "destination": "/api/product/single" }
+    ]
+}
