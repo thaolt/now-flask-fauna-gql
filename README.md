@@ -1,24 +1,11 @@
 # supershop
 
-## Project setup
+## Local development
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
+now dev
 ```
 
-### Compiles and minifies for production
+## Production deployment
 ```
-yarn build
+now --prod
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
