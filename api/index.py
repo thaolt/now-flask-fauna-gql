@@ -1,5 +1,6 @@
-from flask import Flask, Response
-app = Flask(__name__)
+from lib.app import app
+from flask import Response
+from lib.dbal import faunadb
 
 @app.route('/hello')
 def hello():
